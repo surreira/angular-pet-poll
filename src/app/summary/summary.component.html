@@ -1,0 +1,14 @@
+<div class="container">
+  <mat-card *ngIf="answers.type !== '' && answers.name !== '' && answers.expense !== ''">
+    <mat-card-title>Summary</mat-card-title>
+    <mat-card-content>
+      <p>
+        You have a <strong>{{answers.type}}</strong> called <strong>{{answers.name}}</strong> and you spend
+        <strong>{{answers.expense}}</strong> per month of its food.
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <a mat-flat-button color="primary" routerLink="/">Back</a>
+    </mat-card-actions>
+  </mat-card>
+</div>
